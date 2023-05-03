@@ -30,3 +30,5 @@ require("plugin-config.telescope")
 require("plugin-config.nvim-autopairs")
 
 require("plugin-config.symbols-outline")
+
+require("plugin-config.comment")

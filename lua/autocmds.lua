@@ -4,17 +4,18 @@ local myAutoGroup = vim.api.nvim_create_augroup("myAutoGroup", {
 
 local autocmd = vim.api.nvim_create_autocmd
 
--- 自动切换目录为当前编辑文件所在目录
+-- 自动切换目录为当前编辑文件所在目录-会影响telescope查找路径
 -- vim.cmd([[
 -- 	autocmd BufRead,BufNewFile,BufEnter * cd %:p:h
 -- ]])
-autocmd("BufEnter,BufNewFile,BufRead", {
-  nested = true,
-  group = myAutoGroup,
-  callback = function()
-      vim.api.nvim_command("cd %:p:h")
-  end,
-})
+-- 第二种方式
+-- autocmd("BufEnter,BufNewFile,BufRead", {
+--   nested = true,
+--   group = myAutoGroup,
+--   callback = function()
+--       vim.api.nvim_command("cd %:p:h")
+--   end,
+-- })
 
 -- 修改lua/plugins.lua 自动更新插件
 autocmd("BufWritePost", {

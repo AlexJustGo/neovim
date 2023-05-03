@@ -33,4 +33,5 @@ packer.startup(
 
 	-- git
 	use({ 'doronbehar/nvim-fugitive' })
+	use {'numToStr/Comment.nvim'}
 end)

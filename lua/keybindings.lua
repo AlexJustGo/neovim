@@ -30,9 +30,9 @@ map("n", "tb", ":SymbolsOutline<CR>", opt)
 -- 被占了 <C-h>
 -- map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
-map("n", "bp", ":BufferLinePick<CR>", opt)
+map("n", "<leader>bp", ":BufferLinePick<CR>", opt)
 --"moll/vim-bbye"
-map("n", "bd", ":Bdelete!<CR>", opt)
+map("n", "<leader>bd", ":Bdelete!<CR>", opt)
 
 -- Telescope
 -- 查找文件
@@ -48,8 +48,8 @@ pluginKeys.telescopeList = {
     ["<Down>"] = "move_selection_next",
     ["<Up>"] = "move_selection_previous",
     -- 历史记录
-    ["<C-n>"] = "cycle_history_next",
-    ["<C-p>"] = "cycle_history_prev",
+    -- ["<C-n>"] = "cycle_history_next",
+    -- ["<C-p>"] = "cycle_history_prev",
     -- 关闭窗口
     ["<C-c>"] = "close",
     -- 预览窗口上下滚动
