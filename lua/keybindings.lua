@@ -60,13 +60,15 @@ pluginKeys.telescopeList = {
 
 -- LSP
 pluginKeys.mapLSP = function(mapbuf)
-	mapbuf('n', 'gd',		vim.lsp.buf.definition)
+	-- 和 <C-]>效果一样，所以就不给特殊按键了
+	-- mapbuf('n', 'gd',		vim.lsp.buf.definition)
+	mapbuf('n', 'gd',		vim.lsp.buf.declaration)
 	mapbuf('n', 'gi',		vim.lsp.buf.implementation)
 	mapbuf('n', 'gr',		vim.lsp.buf.references)
 	mapbuf('n', 'gt',		vim.lsp.buf.type_definition)
-	mapbuf('n', '<leader>rn',	vim.lsp.buf.rename)
 	mapbuf('n', 'gh',		vim.lsp.buf.hover)
 	mapbuf('n', 'ga',		":ClangdSwitchSourceHeader<CR>")
+	mapbuf('n', '<leader>rn',	vim.lsp.buf.rename)
 	mapbuf('n', '<space>f', function() vim.lsp.buf.format { async = true } end)
 end
 

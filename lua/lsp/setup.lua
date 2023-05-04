@@ -26,7 +26,7 @@ mason.setup({
       package_uninstalled = "✗",
     },
   },
-  log_level = vim.log.levels.DEBUG,
+  log_level = vim.log.levels.INFO,
 })
 
 -- mason-lspconfig uses the `lspconfig` server names in the APIs it exposes - not `mason.nvim` package names
