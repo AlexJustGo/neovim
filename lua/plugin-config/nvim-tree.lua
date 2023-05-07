@@ -63,8 +63,8 @@ nvim_tree.setup({
         -- 不显示行数
         number = false,
         relativenumber = false,
-        -- 显示图标
-        signcolumn = 'yes',
+        -- 不显示图标
+        signcolumn = 'no',
     },
     actions = {
         open_file = {
