@@ -23,6 +23,12 @@ treesitter.setup({
 		scope_incremental = "<TAB>",
 	},
   },
+  -- 启用彩虹括号
+  rainbow = {
+    enable = true,
+    extended_mode = true,
+    max_file_lines = nil,
+  },
 })
 
 -- 开启 Folding 模块

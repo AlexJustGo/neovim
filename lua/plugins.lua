@@ -19,8 +19,10 @@ packer.startup(
 	-- telescope
 	use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
 	use 'simrat39/symbols-outline.nvim'
-	-- treesitter （新增）
+	-- treesitter
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+	-- 彩虹括号
+	use 'p00f/nvim-ts-rainbow'
 
 	use {"windwp/nvim-autopairs"}
 
@@ -33,5 +35,7 @@ packer.startup(
 
 	-- git
 	use({ 'doronbehar/nvim-fugitive' })
+
+	-- 代码注释
 	use {'numToStr/Comment.nvim'}
 end)
